@@ -8,14 +8,15 @@
 <body>
         <h2>Sign Up</h2>
         <p style="font-size: 18px;">Please fill this form to create an account.</p>
+    <form>
     <div class="container">
         
         <h4>Email</h4>
-        <input type="text" id="email" placeholder="Enter Email">
+        <input type="text" id="email" placeholder="Enter Email" required>
         <h4>Password</h4>
-        <input type="text" id="password" placeholder="Enter Password">
+        <input type="text" id="password" placeholder="Enter Password" required minlength="6">
         <h4>Repeat Password</h4>
-        <input type="text" id="pass2" placeholder="Repeat Password"> <br>
+        <input type="text" id="pass2" placeholder="Repeat Password" minlength="6" required> <br>
 
         <input type="checkbox"> <span>Remember me</span>
 
@@ -23,6 +24,7 @@
 
         <button>Sign Up</button>
     </div>
+    </form>
     <style>
         h2{
             margin-top: 30px;
